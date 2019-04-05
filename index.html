@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="App">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="module.js"></script>
+    <script src="controller.js"></script>   
+</head>
+<body>
+    <section ng-controller="FamilyCtrl as $ctrl">
+        <div ng-repeat="member in $ctrl.fam" ng-class="member.relation">
+          <p>name = {{member.name}}</p>
+          <p>relation = {{member.relation}}</p>
+          <p>age = {{member.age}}</p>
+          </div>
+          </section>
+
+<!-- control D selects all the simliar names to change at once -->
+
+
+
+
+       
+</body>
+
+
+
+</html>
